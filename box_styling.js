@@ -3,7 +3,7 @@
 	template.innerHTML = `
 		<form id="form">
 			<fieldset>
-				<legend>Colored Box Properties</legend>
+				<legend>Box Properties</legend>
 				<table>
 					<tr>
 						<td>Color</td>
@@ -15,7 +15,7 @@
 		</form>
 	`;
 
-	class ColoredBoxStylingPanel extends HTMLElement {
+	class BoxStylingPanel extends HTMLElement {
 		constructor() {
 			super();
 			this._shadowRoot = this.attachShadow({mode: "open"});
@@ -43,4 +43,4 @@
 		}
 	}
 
-customElements.define("com-sap-sample-coloredbox-styling", ColoredBoxStylingPanel);
+	customElements.define("com-sample-box-styling", BoxStylingPanel);
