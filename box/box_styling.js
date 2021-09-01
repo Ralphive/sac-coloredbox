@@ -44,4 +44,3 @@
 	}
 
 	customElements.define("com-sample-box-styling", BoxStylingPanel);
-})();
